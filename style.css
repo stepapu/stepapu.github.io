@@ -34,7 +34,7 @@ body:before {
   border-left: 45px solid #faf3e6;
   border-right: 45px solid #faf3e6;
   border-top: 45px solid transparent;
-  background: #f7644d url('img-halftone.png') repeat;
+  background: #f7644d repeat;
   margin: 0 auto -45px;
 }
 
