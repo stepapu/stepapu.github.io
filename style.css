@@ -42,7 +42,7 @@ body:after {
   border-left: 7em solid #faf3e6;
   border-right: 7em solid #faf3e6;
   border-bottom: 10em solid transparent;
-  background: #ffb14d url('img-halftone.png') repeat;
+  background: #ffb14d repeat;
   margin: -10em auto 0;
 }
 
