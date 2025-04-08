@@ -116,7 +116,7 @@ p {
 }
 
 .intro h1:before {
-  content: "Dr. Shea\2019s Miraculous";
+  content: "Steve\2019s";
   font-family: "refrigerator-deluxe",sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ p {
   font-size: 1.12rem;
   letter-spacing: 0.1rem;
   font-weight: 700;
-  background: url('img-sprite.png') no-repeat center 0.25em;
+  background: no-repeat center 0.25em;
   background-size: 25rem;
   margin-bottom: 1.3em;
 }
@@ -138,7 +138,7 @@ p {
   margin-bottom: 0em;
   letter-spacing: 0.05rem;
   line-height: 1.275em;
-  background: url('img-bottle.png') no-repeat center 0.75em;
+  background: no-repeat center 0.75em;
   background-size: 1.45em;
 }
 
