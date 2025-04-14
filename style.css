@@ -1,0 +1,41 @@
+/* Minimal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Center the blog container */
+main, header, footer {
+  width: 100%;
+  max-width: 700px;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
