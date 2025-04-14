@@ -4,11 +4,6 @@ const posts = [
     date: "2025-04-14",
     content: "This is my first post. Just testing things out!"
   },
-  {
-    title: "Another Post",
-    date: "2025-04-13",
-    content: "I wrote this using JavaScript. Cool, right?"
-  }
 ];
 
 const container = document.getElementById('blog-posts');
