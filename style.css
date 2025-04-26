@@ -39,3 +39,29 @@ h1, h2 {
 p {
   margin-bottom: 1rem;
 }
+
+#lastfm-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.5em;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+#lastfm-tracks div {
+  padding: 0.5em;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  #lastfm-tracks {
+    font-size: 0.95rem;
+    padding: 0.25em;
+  }
+
+  #lastfm-tracks div {
+    padding: 0.4em;
+  }
+}
