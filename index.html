@@ -7,65 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h3>A history and crime blog.</h3>
-  </header>
+  <div class="main-wrapper">
+    <main>
+      <article>
+        <h2>My First Blog Post</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </article>
+      <article>
+        <h2>My Second Blog Post</h2>
+        <p>More content here...</p>
+      </article>
+      <!-- Add more posts -->
+    </main>
 
-  <main id="blog-posts">
-    <!-- JavaScript will insert posts here -->
-  </main>
-
-  <footer>
-    <section id="lastfm">
-    <h2>🎧 Recent Tracks</h2>
-    <div id="lastfm-tracks">Loading...</div>
-  </section>
-      <script>
-    const username = 'stepapu';
-    const apiKey = 'eda9ba09f56897adc34c8b57c44cd9e1';
-
-    fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${stepapu}&api_key=${eda9ba09f56897adc34c8b57c44cd9e1}&format=json`)
-      .then(response => response.json())
-      .then(data => {
-        const tracks = data.recenttracks.track.slice(0, 5);
-        const container = document.getElementById('lastfm-tracks');
-
-        container.innerHTML = tracks.map(track => `
-          <div>
-            <strong>${track.artist['#text']}</strong> – ${track.name}
-          </div>
-        `).join('');
-      })
-      .catch(err => {
-        document.getElementById('lastfm-tracks').innerText = 'Error loading tracks.';
-        console.error(err);
-      });
-  </script>
-  </footer>
+    <aside id="lastfm-tracks">
+      Loading recent tracks...
+    </aside>
+  </div>
 
   <script src="script.js"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const username = 'stepapu';
-    const apiKey = 'eda9ba09f56897adc34c8b57c44cd9e1';
-
-    fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`)
-      .then(response => response.json())
-      .then(data => {
-        const tracks = data.recenttracks.track.slice(0, 5);
-        const container = document.getElementById('lastfm-tracks');
-
-        container.innerHTML = tracks.map(track => `
-          <div>
-            <strong>${track.artist['#text']}</strong> – ${track.name}
-          </div>
-        `).join('');
-      })
-      .catch(err => {
-        document.getElementById('lastfm-tracks').innerText = 'Error loading tracks.';
-        console.error(err);
-      });
-  });
-</script>
 </body>
 </html>
